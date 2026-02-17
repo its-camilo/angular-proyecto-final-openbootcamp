@@ -5,8 +5,13 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "Angular.ng-template"
-      ]
+        "Angular.ng-template",
+        "PKief.material-icon-theme"
+      ],
+      "settings": {
+        "workbench.colorTheme": "Solarized Dark",
+        "workbench.iconTheme": "material-icon-theme"
+      }
     }
   },
   "postCreateCommand": "npm install -g npm@11.6.2 && npm install -g @angular/cli@21.1.4 && npm install && (npm ls @angular/material --depth=0 >/dev/null 2>&1 || npx ng add @angular/material --skip-confirmation --defaults)",
