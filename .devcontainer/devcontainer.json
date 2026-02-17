@@ -6,11 +6,18 @@
     "vscode": {
       "extensions": [
         "Angular.ng-template",
-        "PKief.material-icon-theme"
+        "PKief.material-icon-theme",
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
       ],
       "settings": {
         "workbench.colorTheme": "Solarized Dark",
-        "workbench.iconTheme": "material-icon-theme"
+        "workbench.iconTheme": "material-icon-theme",
+        "github.copilot.chat.modelSelection.enabled": true,
+        "github.copilot.chat.editor.model": "gemini-3-flash",
+        "github.copilot.chat.view.model": "gemini-3-flash",
+        "github.copilot.editor.enableCodeActions": true,
+        "github.copilot.editor.enableAutoCompletions": true
       }
     }
   },
