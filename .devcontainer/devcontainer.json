@@ -1,0 +1,21 @@
+{
+  "name": "Angular Proyecto Final (Codespaces)",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
+  "workspaceFolder": "/workspaces/angular-proyecto-final-openbootcamp",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Angular.ng-template"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install -g npm@11.6.2 && npm install -g @angular/cli@21.1.4 && cd ProyectoFinal && npm install",
+  "postStartCommand": "cd ProyectoFinal && npm install",
+  "forwardPorts": [4200],
+  "portsAttributes": {
+    "4200": {
+      "label": "Angular Dev Server",
+      "onAutoForward": "notify"
+    }
+  }
+}
