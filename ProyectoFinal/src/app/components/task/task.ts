@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ITask } from '../../models/interfaces/Task.interface';
 
 @Component({
   selector: 'app-task',
@@ -6,6 +7,18 @@ import { Component } from '@angular/core';
   templateUrl: './task.html',
   styleUrl: './task.scss',
 })
-export class Task {
 
+export class Task implements OnInit {
+  @Input() task: ITask | undefined;
+  @Output() delete: EventEmitter<ITask> = new EventEmitter<ITask>();
+
+  constructor() {}
+
+  ngOnInit(): void {
+    //
+  }
+
+  deleteTask(): void {
+    this.delete.emit(this.task);
+  }
 }

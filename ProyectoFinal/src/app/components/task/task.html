@@ -1,1 +1,5 @@
-<p>task works!</p>
+<h5>Title: {{ task?.title }}</h5>
+<h6>Description: {{ task?.description }}</h6>
+<p>Status: {{ task?.completed ? 'Completada' : 'Pendiente' }}</p>
+
+<button (click)="deleteTask()">Eliminar</button>
